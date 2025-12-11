@@ -6,7 +6,7 @@
     <title>ShopEase - Responsive Navbar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* --- General Reset & Typography --- */
+       
         * {
             margin: 0;
             padding: 0;
@@ -18,7 +18,7 @@
             background-color: #f4f4f4;
         }
 
-        /* --- Navbar Container --- */
+        
         .navbar {
             background-color: #222;
             color: white;
@@ -28,25 +28,21 @@
             padding: 15px 20px;
         }
 
-        /* --- Logo (Left) --- */
+        
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
             letter-spacing: 1px;
-            /* Order 1: Visually first */
             order: 1;
-            /* Give it a fixed width or flex-basis so the center calculation is even */
             flex: 1; 
         }
 
-        /* --- Navigation Links (Center) --- */
+        
         .nav-links {
             list-style: none;
             display: flex;
             gap: 20px;
-            /* Order 2: Visually in the middle */
             order: 2;
-            /* Takes up remaining space and centers the content */
             flex: 2;
             justify-content: center;
         }
@@ -62,14 +58,12 @@
             color: #ff9800;
         }
 
-        /* --- Action Buttons (Right) --- */
+       
         .nav-actions {
             display: flex;
             gap: 15px;
             align-items: center;
-            /* Order 3: Visually last */
             order: 3;
-            /* Match flex of logo to ensure the menu stays dead center */
             flex: 1;
             justify-content: flex-end; /* Pushes text to the far right */
         }
@@ -81,19 +75,19 @@
             font-size: 0.9rem;
         }
 
-        /* --- Hamburger Menu Icon (Hidden on Desktop) --- */
+        
         #menu-toggle, .menu-icon {
             display: none; 
         }
 
-        /* The Label acts as the Hamburger Icon */
+        
         .menu-icon {
-            display: none; /* Hidden on desktop */
+            display: none; 
             font-size: 1.8rem;
             cursor: pointer;
         }
 
-        /* --- Main Content Area --- */
+        
         .hero-section {
             text-align: center;
             padding: 50px 20px;
@@ -104,23 +98,23 @@
             color: #333;
         }
 
-        /* --- MEDIA QUERIES (Mobile View) [cite: 26, 59] --- */
+       
         @media (max-width: 768px) {
             
-            /* Show Hamburger Icon */
+            
             .menu-icon {
-                display: block; /* [cite: 61] */
-                order: 1; /* Adjust visual order if needed */
+                display: block; 
+                order: 1;
             }
 
-            /* Hide Links by default on mobile [cite: 60] */
+            
             .nav-links {
                 display: none;
-                width: 100%; /* Full width for drop down */
-                flex-direction: column; /* Stack vertical [cite: 23] */
+                width: 100%; 
+                flex-direction: column;
                 text-align: center;
                 padding-top: 20px;
-                order: 3; /* Force links to drop to the bottom */
+                order: 3;
             }
 
             .nav-links li {
@@ -128,13 +122,12 @@
                 border-bottom: 1px solid #444;
             }
 
-            /* Actions stay visible on top right */
+            
             .nav-actions {
                 order: 2;
             }
 
-            /* CHECKBOX HACK LOGIC [cite: 55, 63] */
-            /* When checkbox is checked, select the sibling .nav-links and display it */
+            
             #menu-toggle:checked ~ .nav-links {
                 display: flex;
             }
