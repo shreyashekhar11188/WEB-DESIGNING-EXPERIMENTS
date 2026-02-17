@@ -4,24 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Swiggy Clone</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="WebClone.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
-    <div class="logo">Swiggy</div>
+    <div class="logo"><a href="index.html">Swiggy</a></div>
     <nav>
-        <a href="#">Search</a>
-        <a href="#">Offers</a>
-        <a href="#">Help</a>
-        <a href="#">Sign In</a>
-        <a href="#" class="cart">Cart</a>
+        <a href="#search">Search</a>
+        <a href="#offers">Offers</a>
+        <a href="#help">Help</a>
+        <a href="login.html">Sign In</a>
+        <a href="cart.html" class="cart">Cart</a>
     </nav>
 </header>
 
 <!-- HERO SECTION -->
-<section class="hero">
+<section class="hero" id="search">
     <h1>Order food & groceries. Discover best restaurants.</h1>
     <div class="search-box">
         <input type="text" placeholder="Enter your delivery location">
@@ -33,11 +33,11 @@
 <section class="categories">
     <h2>What's on your mind?</h2>
     <div class="category-container">
-        <div class="category">Pizza</div>
-        <div class="category">Burger</div>
-        <div class="category">Biryani</div>
-        <div class="category">Chinese</div>
-        <div class="category">Desserts</div>
+        <a href="#" class="category">🍕 Pizza</a>
+        <a href="#" class="category">🍔 Burger</a>
+        <a href="#" class="category">🍛 Biryani</a>
+        <a href="#" class="category">🍜 Chinese</a>
+        <a href="#" class="category">🍰 Desserts</a>
     </div>
 </section>
 
@@ -46,32 +46,32 @@
     <h2>Top Restaurants near you</h2>
     <div class="restaurant-grid">
 
-        <div class="card">
-            <img src="https://source.unsplash.com/400x300/?pizza" alt="">
-            <h3>Pizza Hut</h3>
-            <p>⭐ 4.3 • 30 mins</p>
-        </div>
 
-        <div class="card">
-            <img src="https://source.unsplash.com/400x300/?burger" alt="">
+        <a href="restaurant.html" class="card">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Burger">
             <h3>Burger King</h3>
             <p>⭐ 4.1 • 25 mins</p>
-        </div>
+        </a>
 
-        <div class="card">
-            <img src="https://source.unsplash.com/400x300/?biryani" alt="">
+        <a href="restaurant.html" class="card">
+            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7" alt="Biryani">
             <h3>Biryani Blues</h3>
             <p>⭐ 4.5 • 35 mins</p>
-        </div>
+        </a>
 
-        <div class="card">
-            <img src="https://source.unsplash.com/400x300/?noodles" alt="">
+        <a href="restaurant.html" class="card">
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246" alt="Noodles">
             <h3>Wok Express</h3>
             <p>⭐ 4.2 • 20 mins</p>
-        </div>
+        </a>
 
     </div>
 </section>
+
+<!-- FOOTER -->
+<footer style="background:#222;color:white;padding:20px;text-align:center;margin-top:40px;">
+    © 2026 Swiggy Clone | Made for Web Development Workshop
+</footer>
 
 </body>
 </html>
